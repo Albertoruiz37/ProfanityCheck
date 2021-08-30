@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assignment.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Assignment.Api.Controllers.CheckProfanityController">
+            <summary>
+            Profanity check controller.
+            </summary>
+        </member>
+        <member name="M:Assignment.Api.Controllers.CheckProfanityController.Checkfile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Checks for a text if contains a determined set of banned words.
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Assignment.Api.Controllers.WordController">
+            <summary>
+            Handles all Word entity related transactions.
+            </summary>
+        </member>
+        <member name="M:Assignment.Api.Controllers.WordController.AddWord(Assignment.ServiceLayer.Word)">
+            <summary>
+            Adds a word.
+            </summary>
+            <param name="word">Word to be added</param>
+            <returns>OK if everything worked fine.</returns>
+        </member>
+        <member name="M:Assignment.Api.Controllers.WordController.UpdateWord(System.Int32,System.String)">
+            <summary>
+            Updates a word.
+            </summary>
+            <param name="id">Id to update</param>
+            <param name="value">new value for the word</param>
+            <returns>OK if everything worked fine.</returns>
+        </member>
+        <member name="M:Assignment.Api.Controllers.WordController.DeleteWords(System.Int32)">
+            <summary>
+            Deletes a word.
+            </summary>
+            <param name="id">Id to delete</param>
+            <returns>OK if everything worked fine.</returns>
+        </member>
+        <member name="M:Assignment.Api.Controllers.WordController.GetWordbyId(System.Int32)">
+            <summary>
+            Gets a word by id.
+            </summary>
+            <param name="id">Id to be retrieved</param>
+            <returns>Returns a word object</returns>
+        </member>
+    </members>
+</doc>
